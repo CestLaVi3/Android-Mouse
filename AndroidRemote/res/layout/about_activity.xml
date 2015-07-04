@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffcccccc" >
+     <LinearLayout
+        android:id="@+id/about_01"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#EEEEEE"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_02"
+        android:layout_below="@+id/about_01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:id="@+id/about_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo_02"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/about_04"
+            android:layout_below="@+id/about_06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:text="@string/about_name"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+        <TextView 
+            android:id="@+id/about_05"
+            android:layout_below="@+id/about_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+             android:textSize="20sp"
+            android:text="@string/about_name1"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

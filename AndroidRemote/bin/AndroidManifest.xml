@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.remote.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="5" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.STATUS_BAR" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:icon="@drawable/logo_background"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.remote.start.Welcome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.remote.joshsera.PadActivity"
+            android:screenOrientation="user" >
+        </activity>
+        <activity
+            android:name="com.remote.joshsera.PrefsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.remote.joshsera.RemoteDroidActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.remote.activity.BottomMenuActivity" >
+        </activity>
+        <activity android:name=".SldingDrawer" >
+        </activity>
+        <activity android:name=".TestActivity3" >
+        </activity>
+        <activity android:name=".MyPagerActivity" >
+        </activity>
+        <activity android:name="com.remote.save.SaveIp" >
+        </activity>
+        <activity android:name=".HelpActivity" >
+        </activity>
+        <activity android:name=".B" >
+        </activity>
+        <activity
+            android:name="com.remote.ppt.PPTActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.remote.ppt.MyPagerActivityPPT" >
+        </activity>
+        <activity android:name="com.remote.ppt.MainGroupActivityPPT" >
+        </activity>
+        <activity android:name="com.remote.activity.WifiActivity" >
+        </activity>
+        <activity
+            android:name="com.remote.activity.ChangeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.remote.activity.AboutActivity" >
+        </activity>
+        <activity android:name="com.remote.start.StartActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="MainActivity" >
+        </activity>
+        <activity
+            android:name="com.remote.tablehost.MainGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.remote.start.GuideViewDemoActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+    <support-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

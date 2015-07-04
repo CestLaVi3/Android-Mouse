@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ppt_activity_background" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 方向控制    中间 -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" >
+
+                <!-- 开始 -->
+
+                 <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/start"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ico_ppt_activity"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/start"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/blue"
+                        android:text="开始" />
+                </RelativeLayout>
+                <!-- 停止 -->
+
+                 <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/end"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ico_ppt_activity_stop"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/end"
+                        android:layout_centerHorizontal="true"
+                         android:textColor="@color/blue"
+                        android:text="停止" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"  >
+
+                <!-- 上一张 -->
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ppt_activiti_back"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/back"
+                        android:layout_centerHorizontal="true"
+                         android:textColor="@color/blue"
+                        android:text="上一页" />
+                </RelativeLayout>
+
+                <!-- 下一张 -->
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/froward"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ico_ppt_activiti_next"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/froward"
+                         android:layout_centerHorizontal="true"
+                          android:textColor="@color/blue"
+                        android:text="下一页" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"  >
+
+                <!-- 首页 -->
+
+                 <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/first"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/ico_ppt_activity_first"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/first"
+                         android:layout_centerHorizontal="true"
+                          android:textColor="@color/blue"
+                        android:text="首页" />
+                </RelativeLayout>
+                <!-- 末尾 -->
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/last"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                         android:layout_centerHorizontal="true"
+                        android:background="@drawable/ico_ppt_activity_last"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/last"
+                        android:layout_centerHorizontal="true"
+                         android:textColor="@color/blue"
+                        android:text="尾页" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 关闭 -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp" >
+
+            <!-- 关闭 -->
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                     android:layout_centerHorizontal="true"
+                    android:background="@drawable/ico_ppt_activity_close"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/close"
+                    android:layout_centerHorizontal="true"
+                     android:textColor="@color/blue"
+                    android:text="关闭软件" />
+            </RelativeLayout>
+
+            <!--
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/close1"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:text="关闭"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/close1"
+                    android:layout_centerInParent="true"
+                    android:text="关闭软件" />
+            </RelativeLayout>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/start_bakground" >
+    <ImageView 
+        android:id="@+id/item_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/start_background_1"
+        android:layout_centerInParent="true"/>
+	<!-- <TextView 
+	    android:id="@+id/item_01_textView_01"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="wifi检测和wifi监控"
+	    android:layout_below="@+id/item_01"
+	    android:textColor="@color/black"
+	    android:layout_centerHorizontal="true"/>
+	<TextView 
+	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="随时监测wifi网络"
+	    android:layout_below="@+id/item_01_textView_01"
+	    android:layout_centerHorizontal="true"/> -->
+</RelativeLayout>

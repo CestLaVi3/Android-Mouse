@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SlidingDrawer
+        android:id="@+id/slding"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/hander" >
+
+        <ImageView
+            android:id="@+id/hander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/TextView0001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="@string/txt_help_dialog_0" >
+            </TextView>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>

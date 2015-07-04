@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppt_activity_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffcccccc"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/about_01"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="#EEEEEE"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/wifi_name"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/wifi_liner_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/about_01"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:clickable="false"
+                android:text="手机在局域网中的信息"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#EEEEEE"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wifi_liner_2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:clickable="false"
+                android:text="手机信息"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+            <ListView
+                  android:layout_marginTop="10dp"
+                android:id="@+id/listview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#EEEEEE"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

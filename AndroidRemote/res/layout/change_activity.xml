@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcccccc"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/change_01"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#EEEEEE" >
+
+        <TextView
+            android:id="@+id/about_text_01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        
+        <!--
+             <TextView
+            android:id="@+id/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/change"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/change_02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/change_01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/change_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/change_computer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_change_name1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp" >
+
+                <TextView
+                    android:id="@+id/change_textView_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="控制电脑"
+                    android:textColor="#ff666666"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/change_textView_01"
+                    android:layout_gravity="center"
+                    android:text="控制ptt及键盘鼠标等等"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/change_frame_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/change_watch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ico_change_name2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp" >
+
+                <TextView
+                    android:id="@+id/change_textView_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_name2"
+                    android:textColor="#ff666666"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/change_textView_02"
+                    android:layout_gravity="center"
+                    android:text="查看手机型号及局域网信息等等"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

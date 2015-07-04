@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_ip_error">服务器未找到</string>
+    <string name="txt_connect">连接</string>
+    <string name="app_name">PC 无线助手</string>
+    <string name="txt_help">帮助</string>
+    
+    <string name="txt_close">关闭</string>
+    <string name="txt_help_dialog_0">第一步：用一台可以上网的电脑，建立一个局域网，手机连入这个局域网 </string>
+    <string name="txt_help_dialog_1">第二步：打开此软件的服务器，会出现如下界面.</string>
+    <string name="txt_help_dialog_2"> 第三步:打开手机上的客户端，输入上面图中出现的IP地址，然后点击连接,如下图所示</string>
+    <string name="txt_help_dialog_3">         3、打开你安装的服务器,上面会显示你的IP地址  </string>
+    <string name="txt_help_dialog_4">         4、在文本框中输入你的IP地址,进行连接</string>
+    <string name="txt_preferences">设置</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_recentlyUsedHosts">你使用的IP地址:</string>
+    <string name="toast_invalidIP">IP地址非法!</string>
+    <string name="about">关于</string>
+    <string name="about_name">PC 无线助手</string>
+    <string name="about_name1">V1.0</string>
+    <string name="help_name">帮助</string>
+    <string name="change">控制</string>
+    <string name="change_name1">控制电脑</string>
+     <string name="change_name2">查看手机信息</string>
+     <string name="wifi_name">关于手机</string>
+
+</resources>

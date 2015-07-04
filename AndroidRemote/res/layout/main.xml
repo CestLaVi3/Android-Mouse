@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.remote.joshsera.SlidingMenuView
+        android:id="@+id/sliding_menu_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/left_sliding_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="hideMenu"
+                android:text="隐藏菜单" />
+
+            <ListView
+                android:id="@+id/lvHosts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Menu_bottom"
+                android:layout_alignParentBottom="true" >
+            </ListView>
+            
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/sliding_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+    </com.remote.joshsera.SlidingMenuView>
+
+</RelativeLayout>
